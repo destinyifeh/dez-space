@@ -69,8 +69,7 @@ export const SideBar = () => {
               className={`${ralewayFont.className} text-[#1A1003] text-base leading-[18px]`}>
               Phone
             </p>
-            <p
-              className={`${ralewayFont.className} text-[#000000] text-base font-bold w-full break-all`}>
+            <p className={`text-[#000000] text-base font-bold break-all`}>
               09033662731
             </p>
           </div>

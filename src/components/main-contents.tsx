@@ -262,7 +262,7 @@ export const ResumeContent = () => {
           </div>
         </div>
       </div>
-      <div className="work-soft flex flex-col gap-8 xl:flex-row xl:mt-6 md:mt-8">
+      <div className="work-soft mt-8 flex flex-col gap-8 xl:flex-row xl:mt-6">
         <div className="work  w-[100%] xl:w-[35%]">
           <h2 className="text-[#0B0909] text-xl">Work Skills</h2>
 
