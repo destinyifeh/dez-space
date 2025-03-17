@@ -1,5 +1,4 @@
 import nodemailer from 'nodemailer';
-//import {capitalizeFirstLetter} from '../utils/helpers.js';
 
 type ContactProps = {
   email: string;
@@ -7,7 +6,7 @@ type ContactProps = {
   message: string;
 };
 
-let transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 465,
   secure: true,

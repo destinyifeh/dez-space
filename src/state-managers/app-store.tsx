@@ -22,7 +22,7 @@ const initialState: States = {
   theme: appDefaultTheme,
 };
 
-export const useAppStore = create<States & Actions>((set, get) => ({
+export const useAppStore = create<States & Actions>(set => ({
   ...initialState,
   setNavigationState(currentNav) {
     console.log(currentNav, 'currentNav');
