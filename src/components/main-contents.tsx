@@ -139,7 +139,7 @@ export const ResumeContent = () => {
         </span>
       </div>
 
-      <div className="flex flex-col gap-8 xl:gap-15 xl:flex-row xl:items-center xl:gap-20 mt-5">
+      <div className="edu-exp-cont flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-20 lg:flex-wrap mt-5">
         <div className="edu">
           <div className="flex flex-row items-center gap-5">
             <h2 style={{color: theme.text}} className="text-xl">
@@ -262,7 +262,7 @@ export const ResumeContent = () => {
           </div>
         </div>
       </div>
-      <div className="work-soft mt-8 flex flex-col gap-8 xl:flex-row xl:mt-6">
+      <div className="work-soft mt-8 flex flex-col gap-8 lg:flex-row lg:mt-6 lg:flex-wrap">
         <div className="work  w-[100%] xl:w-[35%]">
           <h2 className="text-[#0B0909] text-xl">Work Skills</h2>
 
