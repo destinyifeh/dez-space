@@ -1,12 +1,14 @@
 import {appDarkTheme, appDefaultTheme, pacificoFont} from '@/constants/style';
+import {useTheme} from '@/contexts/ThemeContext';
 import {useAppStore} from '@/state-managers/app-store';
-import Image from 'next/image';
+import {Moon} from 'lucide-react';
 
 export const Header = () => {
-  const {setTheme, theme} = useAppStore(state => state);
-
+  const {setTheme, myTheme} = useAppStore(state => state);
+  const {theme, toggleTheme} = useTheme();
   const handleThemeChange = () => {
-    if (theme.type === 'default') {
+    toggleTheme();
+    if (myTheme.type === 'default') {
       setTheme(appDarkTheme);
     } else {
       setTheme(appDefaultTheme);
@@ -15,7 +17,9 @@ export const Header = () => {
   return (
     <div className="flex flex-row  items-center justify-between mb-5">
       <div className="flex flex-row space-x-1">
-        <p className={`${pacificoFont.className} text-xl text-black`}>
+        <p
+          className={`${pacificoFont.className} text-xl text-black`}
+          style={{color: myTheme.text}}>
           Destiny
         </p>
         <p
@@ -26,7 +30,8 @@ export const Header = () => {
       <button
         className="w-[50px] h-[50px] rounded-full border-[#E1E8EF] border-[1px] flex flex-col justify-center items-center cursor-pointer"
         onClick={handleThemeChange}>
-        <Image src={require('../../public/assets/themeIcon.png')} alt="mood" />
+        {/* <Image src={require('../../public/assets/themeIcon.png')} alt="mood" /> */}
+        <Moon style={{color: myTheme.text}} />
       </button>
     </div>
   );

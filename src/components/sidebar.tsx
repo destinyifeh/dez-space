@@ -5,11 +5,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const SideBar = () => {
-  const {theme} = useAppStore(state => state);
+  const {myTheme} = useAppStore(state => state);
 
   return (
     <aside
-      style={{backgroundColor: theme.background}}
+      style={{backgroundColor: myTheme.background}}
       className="row-span-1 md:col-span-1 rounded-lg p-3">
       <div className="relative w-full mt-2 md:mt-15">
         <span className="md:absolute bottom-[1px] left-1/2 transform -translate-x-1/2">
@@ -27,13 +27,13 @@ export const SideBar = () => {
 
       <div className="flex flex-col items-center">
         <h3
-          style={{color: theme.text}}
+          style={{color: myTheme.text}}
           className={`${ralewayFont.className} font-bold text-lg mb-1`}>
           Destiny Ifehor
         </h3>
         <p
           className={`${ralewayFont.className} text-sm`}
-          style={{color: theme.text}}>
+          style={{color: myTheme.text}}>
           Software Developer
         </p>
       </div>

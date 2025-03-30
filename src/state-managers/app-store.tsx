@@ -6,7 +6,7 @@ type States = {
   activeNav: string;
   workNav: string;
   currentTheme: string;
-  theme: ThemeColorProps;
+  myTheme: ThemeColorProps;
 };
 
 type Actions = {
@@ -19,7 +19,7 @@ const initialState: States = {
   activeNav: 'home',
   workNav: 'all',
   currentTheme: ISDEFAULT_THEME,
-  theme: appDefaultTheme,
+  myTheme: appDefaultTheme,
 };
 
 export const useAppStore = create<States & Actions>(set => ({
@@ -34,6 +34,7 @@ export const useAppStore = create<States & Actions>(set => ({
   },
   setTheme: (theme: ThemeColorProps) => {
     console.log('themeColor:', theme);
-    set({theme: theme});
+    localStorage.setItem('theme', theme.type);
+    set({myTheme: theme});
   },
 }));

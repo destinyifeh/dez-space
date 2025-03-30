@@ -7,12 +7,12 @@ import {Zoom} from 'react-awesome-reveal';
 import {useForm} from 'react-hook-form';
 import {z} from 'zod';
 export const HomeContent = () => {
-  const {theme} = useAppStore(state => state);
+  const {myTheme} = useAppStore(state => state);
 
   return (
     <Zoom>
       <div className="flex flex-row items-center gap-5">
-        <h2 className="text-[#0B0909] text-xl" style={{color: theme.text}}>
+        <h2 className="text-[#0B0909] text-xl" style={{color: myTheme.text}}>
           About
         </h2>
         <span className="">
@@ -24,7 +24,7 @@ export const HomeContent = () => {
       </div>
       <div className="mt-3">
         <p
-          style={{color: theme.text}}
+          style={{color: myTheme.text}}
           className={`${ralewayFont.className} text-[16px]`}>
           Hello there! I'm delighted to welcome you to my portfolio. As a
           passionate software developer, I thrive on exploring cutting-edge
@@ -35,7 +35,7 @@ export const HomeContent = () => {
       </div>
 
       <div className="mt-5">
-        <h3 style={{color: theme.text}} className="text-xl mb-2">
+        <h3 style={{color: myTheme.text}} className="text-xl mb-2">
           What i do!
         </h3>
 
@@ -93,7 +93,7 @@ export const HomeContent = () => {
 };
 
 export const ResumeContent = () => {
-  const {theme} = useAppStore(state => state);
+  const {myTheme} = useAppStore(state => state);
   const workSkills = [
     'Reactjs',
     'React Native',
@@ -127,7 +127,7 @@ export const ResumeContent = () => {
   return (
     <Zoom>
       <div className="flex flex-row items-center gap-5">
-        <h2 className="text-xl" style={{color: theme.text}}>
+        <h2 className="text-xl" style={{color: myTheme.text}}>
           Resume
         </h2>
         <span>
@@ -142,7 +142,7 @@ export const ResumeContent = () => {
       <div className="edu-exp-cont flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-20 lg:flex-wrap mt-5">
         <div className="edu">
           <div className="flex flex-row items-center gap-5">
-            <h2 style={{color: theme.text}} className="text-xl">
+            <h2 style={{color: myTheme.text}} className="text-xl">
               Education
             </h2>
             <span>
@@ -203,7 +203,7 @@ export const ResumeContent = () => {
 
         <div className="exp">
           <div className="flex flex-row items-center gap-5">
-            <h2 className="text-xl" style={{color: theme.text}}>
+            <h2 className="text-xl" style={{color: myTheme.text}}>
               Experience
             </h2>
             <span>
@@ -295,7 +295,7 @@ export const ResumeContent = () => {
 };
 
 export const WorkContent = () => {
-  const {setWorkNavState, workNav, theme} = useAppStore(state => state);
+  const {setWorkNavState, workNav, myTheme} = useAppStore(state => state);
   const [state, setState] = useState<any>('');
   const workResources = [
     {
@@ -357,7 +357,7 @@ export const WorkContent = () => {
   return (
     <Zoom>
       <div className="flex flex-row items-center gap-5">
-        <h2 style={{color: theme.text}} className="text-xl">
+        <h2 style={{color: myTheme.text}} className="text-xl">
           Portfolio
         </h2>
         <span className="">
@@ -441,14 +441,14 @@ export const WorkContent = () => {
               </div>
               <div className="md:w-[60%]">
                 <h3
-                  style={{color: theme.text}}
+                  style={{color: myTheme.text}}
                   className={`${ralewayFont.className} font-bold`}>
                   {state.name}
                 </h3>
 
                 <div className="">
                   <p
-                    style={{color: theme.text}}
+                    style={{color: myTheme.text}}
                     className={`${ralewayFont.className} mt-3`}>
                     {state.description}{' '}
                   </p>
@@ -479,7 +479,7 @@ const contactDataSchema = z.object({
 });
 export const ContactContent = () => {
   type contactDataType = z.infer<typeof contactDataSchema>;
-  const {theme} = useAppStore(state => state);
+  const {myTheme} = useAppStore(state => state);
 
   const [submitting, setSubmitting] = useState({
     pending: false,
@@ -550,7 +550,7 @@ export const ContactContent = () => {
   return (
     <Zoom>
       <div className="flex flex-row items-center gap-5">
-        <h2 style={{color: theme.text}} className="text-xl">
+        <h2 style={{color: myTheme.text}} className="text-xl">
           Contact
         </h2>
         <span>

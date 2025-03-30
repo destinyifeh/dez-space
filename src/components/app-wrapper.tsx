@@ -2,15 +2,10 @@ import React, {FC} from 'react';
 
 interface APPWrapperProps {
   children: React.ReactNode;
-  appBackgroundColor?: string;
 }
-export const APPWrapper: FC<APPWrapperProps> = ({
-  children,
-  appBackgroundColor,
-}) => {
-  const appBg = appBackgroundColor ?? 'bg-[#EBF2FA]';
+export const AppInnerContainer: FC<APPWrapperProps> = ({children}) => {
   return (
-    <div className={`${appBg} h-screen`}>
+    <div className="mt-10 w-[85%] mx-auto">
       <div>{children}</div>
     </div>
   );

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import {FC} from 'react';
 
 export const Navigation: FC = () => {
-  const {setNavigationState, activeNav, setWorkNavState, theme} = useAppStore(
+  const {setNavigationState, activeNav, setWorkNavState, myTheme} = useAppStore(
     state => state,
   );
 
@@ -21,7 +21,7 @@ export const Navigation: FC = () => {
   };
   return (
     <nav
-      style={{backgroundColor: theme.background}}
+      style={{backgroundColor: myTheme.background}}
       className="w-[100%] h-[100px] md:w-[503px] px-5 md:px-0 flex justify-center ml-auto items-center border-[#E1E8EF] border-[1px] rounded-lg">
       <ul className="flex space-x-10">
         <button
