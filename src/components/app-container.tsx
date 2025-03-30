@@ -30,6 +30,19 @@ export const AppContainer: FC<APPContainerProps> = ({
     }
   }, [setTheme]);
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const handleChange = (e: MediaQueryListEvent) => {
+      const newTheme = e.matches ? appDarkTheme : appDefaultTheme;
+      setTheme(newTheme);
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, [setTheme]);
+
   const appBg = appBackgroundColor ?? 'bg-[#EBF2FA]';
   return (
     <div
