@@ -242,7 +242,7 @@ export const ResumeContent = () => {
               </h3>
               <p
                 className={`${ralewayFont.className} text-[#1A1003] text-base`}>
-                Jan 2022 – Dec 2022 · Remote
+                Jan 2022 – Jun 2022 · Remote
               </p>
             </div>
           </div>
