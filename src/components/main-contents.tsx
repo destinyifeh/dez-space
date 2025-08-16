@@ -26,11 +26,10 @@ export const HomeContent = () => {
         <p
           style={{color: myTheme.text}}
           className={`${ralewayFont.className} text-[16px]`}>
-          Hello there! I'm delighted to welcome you to my portfolio. As a
-          passionate software developer, I thrive on exploring cutting-edge
-          technologies and continually enhancing my skills. My journey in app
-          and web development has been exhilarating, and I am committed to
-          embracing emerging industry trends to create innovative solutions.
+          Hi, I’m Destiny Ifehor 👋 a Software Engineer with 5+ years of
+          experience delivering scalable web and mobile applications. I
+          specialize in React, React Native, Next.js, and API-driven
+          architectures, with proven expertise in fintech and SaaS solutions.
         </p>
       </div>
 
@@ -56,10 +55,10 @@ export const HomeContent = () => {
                 </h3>
               </div>
               <p className={`${ralewayFont.className} text-black`}>
-                With a focus on user-centric design and cutting-edge
-                technologies, I thrive on building intuitive and efficient apps
-                that make a positive impact on people's lives. Let's turn ideas
-                into reality and shape the future together.
+                Build and optimize mobile apps with React Native & Expo,
+                focusing on performance, scalability, and compliance.
+                Experienced in SDK integrations (payments, verification, POS)
+                and creating smooth, secure user flows.
               </p>
             </div>
           </div>
@@ -79,10 +78,10 @@ export const HomeContent = () => {
                 </h3>
               </div>
               <p className={`${ralewayFont.className} text-black`}>
-                As a developer, I'm passionate about harnessing the power and
-                flexibility of React and Next.js to build high-performance
-                applications. I continually seek innovative ways to create fast,
-                scalable, and user-friendly experiences.
+                Develop high-performance, scalable applications using React,
+                Next.js, TypeScript, and Tailwind CSS. Skilled in API
+                integration, state management (Redux, Zustand, Context API), and
+                UI/UX collaboration.
               </p>
             </div>
           </div>
@@ -155,47 +154,42 @@ export const ResumeContent = () => {
           </div>
           <div className="w-[100%] md:w-[288.93px] min-h-[100px] bg-[#FFE3BF] rounded-lg mt-4">
             <div className="p-3">
+              <h3
+                className={`${ralewayFont.className} text-[#1A1003] text-base font-bold`}>
+                Bachelor of Science – Banking & Finance
+              </h3>
               <p
                 className={`${ralewayFont.className} text-[#1A1003] text-base`}>
-                2017-2021
-              </p>
-              <h3
-                className={`${ralewayFont.className} text-[#1A1003] text-lg font-bold`}>
-                Bachelor of Science (BSC)
-              </h3>
-              <p className={`${ralewayFont.className} text-[#1A1003] text-lg`}>
-                University of Benin (Uniben)
+                University of Benin, 2017 – 2021
               </p>
             </div>
           </div>
           <div className=" w-[100%] md:w-[288.93px] min-h-[100px] bg-[#FFEED9] rounded-lg mt-4">
             <div className="p-3">
-              <p
+              {/* <p
                 className={`${ralewayFont.className} text-[#1A1003] text-base`}>
                 2022-2023
-              </p>
+              </p> */}
               <h3
-                className={`${ralewayFont.className} text-[#1A1003] text-lg font-bold`}>
-                Software Development
+                className={`${ralewayFont.className} text-[#1A1003] text-base font-bold`}>
+                Software Development Program
               </h3>
-              <p className={`${ralewayFont.className} text-[#1A1003] text-lg`}>
-                Interswitch Academy
+              <p
+                className={`${ralewayFont.className} text-[#1A1003] text-base`}>
+                Interswitch Academy, 2022 – 2023
               </p>
             </div>
           </div>
 
           <div className=" w-[100%] md:w-[288.93px] min-h-[100px] bg-[#F2F7FC] rounded-lg mt-4">
             <div className="p-3">
+              <h3
+                className={`${ralewayFont.className} text-[#1A1003] text-base font-bold`}>
+                Front-End Developer Specialization
+              </h3>
               <p
                 className={`${ralewayFont.className} text-[#1A1003] text-base`}>
-                2023-2023
-              </p>
-              <h3
-                className={`${ralewayFont.className} text-[#1A1003] text-lg font-bold`}>
-                Front-End Developer
-              </h3>
-              <p className={`${ralewayFont.className} text-[#1A1003] text-lg`}>
-                Coursera
+                Coursera, 2023
               </p>
             </div>
           </div>
@@ -215,48 +209,40 @@ export const ResumeContent = () => {
             </span>
           </div>
 
-          <div className=" w-[100%] md:w-[288.93px] min-h-[100px] bg-[#FFE3BF] rounded-lg mt-4">
+          <div className=" w-[100%] md:w-[288.93px] min-h-[100px] bg-[#FFEED9] rounded-lg mt-4">
             <div className="p-3">
+              <h3
+                className={`${ralewayFont.className} text-[#1A1003] text-base font-bold`}>
+                Interswitch Group – Software Engineer
+              </h3>
               <p
                 className={`${ralewayFont.className} text-[#1A1003] text-base`}>
-                2022-2023 (Contract)
-              </p>
-              <h3
-                className={`${ralewayFont.className} text-[#1A1003] text-lg font-bold`}>
-                Software Development
-              </h3>
-              <p className={`${ralewayFont.className} text-[#1A1003] text-lg`}>
-                Interswitch Group
+                Full-time · Aug 2023 – Present · Nigeria (Hybrid)
               </p>
             </div>
           </div>
-          <div className=" w-[100%] md:w-[288.93px] min-h-[100px] bg-[#FFEED9] rounded-lg mt-4">
+
+          <div className=" w-[100%] md:w-[288.93px] min-h-[100px] bg-[#FFE3BF] rounded-lg mt-4">
             <div className="p-3">
+              <h3
+                className={`${ralewayFont.className} text-[#1A1003] text-base font-bold`}>
+                Interswitch Group – Software Engineer (Contract)
+              </h3>
               <p
                 className={`${ralewayFont.className} text-[#1A1003] text-base`}>
-                2024-present
-              </p>
-              <h3
-                className={`${ralewayFont.className} text-[#1A1003] text-lg font-bold`}>
-                Software Development
-              </h3>
-              <p className={`${ralewayFont.className} text-[#1A1003] text-lg`}>
-                Interswitch Group
+                May 2022 – Aug 2023
               </p>
             </div>
           </div>
           <div className=" w-[100%] md:w-[288.93px] min-h-[100px] bg-[#F2F7FC] rounded-lg mt-4">
             <div className="p-3">
+              <h3
+                className={`${ralewayFont.className} text-[#1A1003] text-base font-bold`}>
+                Bukinz (UK) – Software Engineer (Contract)
+              </h3>
               <p
                 className={`${ralewayFont.className} text-[#1A1003] text-base`}>
-                2024-2025 (Contract)
-              </p>
-              <h3
-                className={`${ralewayFont.className} text-[#1A1003] text-lg font-bold`}>
-                Software Development
-              </h3>
-              <p className={`${ralewayFont.className} text-[#1A1003] text-lg`}>
-                Bukinz (UK)
+                Jan 2022 – Dec 2022 · Remote
               </p>
             </div>
           </div>
@@ -306,7 +292,7 @@ export const WorkContent = () => {
       id: 1,
       category: ['app', 'all'],
       description:
-        'This mobile-based platform enables registered agents to earn consistent income by offering services such as bill payments, funds transfers, cash deposits, cash withdrawals, insurance, and airtime and data recharges to customers in their communities.',
+        'A mobile-based fintech platform that empowers registered agents to provide essential financial services within their communities, including bill payments, funds transfers, deposits, withdrawals, insurance, and airtime/data purchases.',
     },
     {
       type: 'App Development',
@@ -316,7 +302,7 @@ export const WorkContent = () => {
       id: 2,
       category: ['app', 'all'],
       description:
-        'Bukinz revolutionizes the booking experience, allowing customers to effortlessly discover and book services anytime. For merchants, Bukinz provides a comprehensive toolkit to streamline operations and manage appointments.',
+        'A booking platform that revolutionizes how customers discover and schedule services anytime. For merchants, Bukinz offers a powerful toolkit to streamline operations and manage appointments seamlessly.',
     },
     {
       type: 'App Development',
@@ -336,7 +322,7 @@ export const WorkContent = () => {
       id: 4,
       category: ['web', 'all'],
       description:
-        'This web-based platform enables registered agents to earn consistent income by offering services such as bill payments, funds transfers, cash deposits, cash withdrawals, insurance, and airtime and data recharges to customers in their communities.',
+        'A web-based fintech platform that empowers registered agents to earn consistent income by providing financial services such as bill payments, funds transfers, deposits, withdrawals, insurance, and airtime/data recharge to their communities.',
     },
     {
       type: 'Web Development',
@@ -346,7 +332,7 @@ export const WorkContent = () => {
       id: 5,
       category: ['web', 'all'],
       description:
-        'The Quickteller Paypoint Admin Dashboard is a comprehensive platform designed to manage and monitor all aspects related to Quickteller Paypoint agents. It facilitates efficient oversight of agent activities, transaction processing, and performance metrics.',
+        'An enterprise-level admin dashboard designed to manage and monitor the operations of Quickteller Paypoint agents. The platform provides efficient oversight of agent activities, transaction processing, compliance checks, and performance metrics.',
     },
   ];
 
@@ -420,7 +406,7 @@ export const WorkContent = () => {
                       {work.type}
                     </p>
                     <h3
-                      className={`${poppinsFont.className} text-[#1A1003] text-[16px]`}>
+                      className={`${poppinsFont.className} text-[#2563eb] underline text-[16px]`}>
                       {work.name}
                     </h3>
                   </div>
@@ -619,15 +605,14 @@ export const ContactContent = () => {
 
       <div className="h-[40%] w-[100%] xl:w-[61%] bg-[#F8FBFB] rounded-lg my-5 p-5 md:pr-10">
         <div>
-          <p className={`${ralewayFont.className} text-[#000000] text-[16px]`}>
-            I am always open to discussing{' '}
-            <span className={`${ralewayFont.className} font-bold`}>
-              new projects, opportunities in tech world, partnerships{' '}
-            </span>{' '}
-            and more so{' '}
-            <span className={`${ralewayFont.className} font-bold`}>
-              mentorship.
-            </span>
+          <p
+            className={`${ralewayFont.className} text-[#000000] text-[16px] font-bold`}>
+            💬 Let’s Connect
+          </p>
+          <p className={`${ralewayFont.className} text-[#000000] text-base`}>
+            I’m always open to discussing new projects, exploring opportunities
+            in the tech world, collaborating on innovative ideas, or engaging in
+            mentorship. Feel free to reach out!
           </p>
         </div>
         <div className="my-5">

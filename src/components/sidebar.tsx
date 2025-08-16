@@ -14,9 +14,7 @@ export const SideBar = () => {
       <div className="relative w-full mt-2 md:mt-15">
         <span className="md:absolute bottom-[1px] left-1/2 transform -translate-x-1/2">
           <Image
-            src={
-              'https://media.licdn.com/dms/image/v2/D4D03AQFmlrwBoFL6WQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1712058393767?e=1747872000&v=beta&t=QZIKdPb-2fCArPYBgJKZRX--9fLD8c-P6xWFFd8H_iE'
-            }
+            src={require('../../public/assets/me.jpeg')}
             width={150}
             height={155}
             alt="Destiny Ifehor Picture"
@@ -34,7 +32,7 @@ export const SideBar = () => {
         <p
           className={`${ralewayFont.className} text-sm`}
           style={{color: myTheme.text}}>
-          Software Developer
+          Software Engineer
         </p>
       </div>
       <div className="flex flex-row gap-3 justify-center mt-3">
