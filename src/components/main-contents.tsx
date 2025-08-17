@@ -217,23 +217,11 @@ export const ResumeContent = () => {
               </h3>
               <p
                 className={`${ralewayFont.className} text-[#1A1003] text-base`}>
-                Full-time · Aug 2023 – Present · Nigeria (Hybrid)
+                Full-time · May 2022 – Present · Nigeria (Hybrid)
               </p>
             </div>
           </div>
 
-          <div className=" w-[100%] md:w-[288.93px] min-h-[100px] bg-[#FFE3BF] rounded-lg mt-4">
-            <div className="p-3">
-              <h3
-                className={`${ralewayFont.className} text-[#1A1003] text-base font-bold`}>
-                Interswitch Group – Software Engineer (Contract)
-              </h3>
-              <p
-                className={`${ralewayFont.className} text-[#1A1003] text-base`}>
-                May 2022 – Aug 2023
-              </p>
-            </div>
-          </div>
           <div className=" w-[100%] md:w-[288.93px] min-h-[100px] bg-[#F2F7FC] rounded-lg mt-4">
             <div className="p-3">
               <h3
@@ -243,6 +231,19 @@ export const ResumeContent = () => {
               <p
                 className={`${ralewayFont.className} text-[#1A1003] text-base`}>
                 Jan 2022 – Jun 2022 · Remote
+              </p>
+            </div>
+          </div>
+
+          <div className=" w-[100%] md:w-[288.93px] min-h-[100px] bg-[#FFE3BF] rounded-lg mt-4">
+            <div className="p-3">
+              <h3
+                className={`${ralewayFont.className} text-[#1A1003] text-base font-bold`}>
+                Freelance Software Developer
+              </h3>
+              <p
+                className={`${ralewayFont.className} text-[#1A1003] text-base`}>
+                2020 – 2022 · Remote
               </p>
             </div>
           </div>
